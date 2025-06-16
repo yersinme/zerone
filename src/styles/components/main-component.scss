@@ -1,0 +1,56 @@
+.main-item {
+  position: relative;
+  background-image: url('../../assets/img/zerone-main.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-top: 100px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+    background: linear-gradient(to top, #253159, #1B1A1D00);
+    pointer-events: none;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-item {
+      color: #fff;
+      padding-bottom: 30px;
+
+      &-text {
+        font-size: 60px;
+      }
+    }
+
+    &-text-sub {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        background-image: url('../../assets/icons/main-logo.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+        @media (max-width: $screen-md) {
+          flex-direction: column;
+    }
+  }
+}
