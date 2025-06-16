@@ -28,6 +28,10 @@
       &-text {
         font-size: 60px;
         padding-bottom: 30px;
+
+            @media (max-width: $screen-md) {
+              font-size: 35px;
+            }
       }
     }
 
