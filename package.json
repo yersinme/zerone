@@ -43,6 +43,10 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.89.2"
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5"
+  },
+  "resolutions": {
+    "sass-loader": "^13.0.0"
   }
 }
