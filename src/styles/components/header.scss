@@ -9,10 +9,6 @@
   align-items: center;
   padding: 25px 0 25px;
 
-  &-logo {
-
-  }
-
   &-links {
     display: flex;
     gap: 20px;
@@ -22,6 +18,10 @@
       font-weight: 850;
       font-size: 12px;
       text-transform: uppercase;
+
+      &:hover {
+        color: lighten($c-header-links, 25%)
+      }
     }
   }
 }

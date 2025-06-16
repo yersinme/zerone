@@ -4,4 +4,10 @@
   padding: 18px 44px;
   color: $c-button;
   font-weight: 800;
+  transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.2s ease;
+
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }

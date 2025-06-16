@@ -1,4 +1,4 @@
-.main-item {
+.main {
   position: relative;
   background-image: url('../../assets/img/zero-main.png');
   background-size: cover;
@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
   padding-top: 100px;
+
   &::after {
     content: '';
     position: absolute;
@@ -21,13 +22,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     &-item {
       color: $c-main-item;
-      padding-bottom: 30px;
 
       &-text {
         font-size: 60px;
+        padding-bottom: 30px;
       }
     }
 
@@ -49,8 +49,9 @@
         background-repeat: no-repeat;
       }
     }
-        @media (max-width: $screen-md) {
-          flex-direction: column;
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
     }
   }
 }
