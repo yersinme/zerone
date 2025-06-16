@@ -1,5 +1,5 @@
 .header {
-  background-color: #FFFCEB;
+  background-color: $c-header-bg;
 }
 
 .header-item {
@@ -16,7 +16,7 @@
   &-links {
     display: flex;
     gap: 20px;
-    color: #253159;
+    color: $c-header-links;
 
     &-link {
       font-weight: 850;
@@ -40,12 +40,12 @@
 
     &-text {
       font-size: 12px;
-      color: #253159;
+      color: $c-header-text;
       font-weight: 850;
     }
 
     &-burger {
-      background-color: #DFA958;
+      background-color: $c-header-burger-bg;
       padding: 18px;
       border-radius: 50%;
       cursor: pointer;

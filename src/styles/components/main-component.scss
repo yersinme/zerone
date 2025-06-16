@@ -1,6 +1,6 @@
 .main-item {
   position: relative;
-  background-image: url('../../assets/img/zerone-main.svg');
+  background-image: url('../../assets/img/zero-main.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     right: 0;
     bottom: 0;
     height: 40%;
-    background: linear-gradient(to top, #253159, #1B1A1D00);
+    background: linear-gradient(to top, $c-main-bg-first, $c-main-bg-second);
     pointer-events: none;
   }
 
@@ -23,7 +23,7 @@
     justify-content: space-between;
 
     &-item {
-      color: #fff;
+      color: $c-main-item;
       padding-bottom: 30px;
 
       &-text {
